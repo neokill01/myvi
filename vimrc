@@ -5,8 +5,8 @@
 map ,d :FufDir<CR>
 map ,, :FufCoverageFile<CR>
 map ,f :q!<CR>
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|DS_Store|project|orig|swp|png|jpg|gif|svg)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-let g:fuf_dir_exclude = '\v(^|node_modules|[/\\])\.(hg|git|bzr|ideas|idea|gsproxy|grunt)($|[/\\])'
+let g:fuf_coveragefile_exclude = '\v\~$|node_modules|\.(o|exe|dll|DS_Store|project|orig|swp|png|jpg|gif|svg)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+let g:fuf_dir_exclude = '\vnode_modules|(^|[/\\])\.(hg|git|bzr|ideas|idea|gsproxy|grunt)($|[/\\])'
 "=========================
 set nocompatible
 set fdm=marker
@@ -28,7 +28,6 @@ syntax enable
 syntax on
 filetype plugin indent on
 let g:JSLintHighlightErrorLine = 0
-"=========================
 "=========solarized config start==============
 set background=dark
 "set background=light
