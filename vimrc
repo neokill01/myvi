@@ -8,7 +8,10 @@ map ,f :q!<CR>
 let g:fuf_coveragefile_exclude = '\v\~$|node_modules|\.(o|exe|dll|DS_Store|project|orig|swp|png|jpg|gif|svg)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 let g:fuf_dir_exclude = '\vnode_modules|(^|[/\\])\.(hg|git|bzr|ideas|idea|gsproxy|grunt)($|[/\\])'
 "=========================
+"         Edit
+"=========================
 set nocompatible
+set backspace=indent,eol,start
 set fdm=marker
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] "状态栏格式
 set list
@@ -27,7 +30,7 @@ set fileformats=unix,dos
 syntax enable
 syntax on
 filetype plugin indent on
-let g:JSLintHighlightErrorLine = 0
+"let g:JSLintHighlightErrorLine = 0
 "=========solarized config start==============
 set background=dark
 "set background=light
