@@ -1,7 +1,15 @@
-"Configuration file for vim
-"===================
-"    FuzzyFinder
-"===================
+"======== plugin ========
+execute pathogen#infect()
+"======= theme ==========
+set background=dark
+"set background=light
+let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
+"let g:solarized_degrade=0
+"let g:solarized_menu=0
+colorscheme solarized
+"colorscheme github
+"======== FuzzyFinder ===========
 map ,d :FufDir<CR>
 map ,, :FufCoverageFile<CR>
 map ,f :q!<CR>
@@ -31,14 +39,4 @@ syntax enable
 syntax on
 filetype plugin indent on
 "let g:JSLintHighlightErrorLine = 0
-"=========solarized config start==============
-set background=dark
-"set background=light
-"let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-let g:solarized_degrade=0
-let g:solarized_menu=0
-colorscheme solarized
-"colorscheme github
-"========solarized config end==============
-execute pathogen#infect()
+
