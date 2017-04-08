@@ -2,9 +2,8 @@
 My VIM Configuration
 ## Dependence
 [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
-##Installation
+## Installation
 ```sh
-  git clone https://github.com/junyug/myvi ~/.vim
-  cd .vim
-  cp vimrc ~/.vimrc
+  git clone --depth 1 https://github.com/junyug/myvi ~/.vim
+  cp ~/.vim/vimrc ~/.vimrc
 ```
